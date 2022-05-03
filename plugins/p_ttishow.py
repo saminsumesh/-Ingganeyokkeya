@@ -50,9 +50,8 @@ async def save_group(bot, message):
         if settings["welcome"]:
             for u in message.new_chat_members:
                 buttons = [[
-                InlineKeyboardButton('⚠️ ɢʀᴏᴜᴘ ʀᴜʟᴇs ⚠️', url='https://telegra.ph/GROUP-RULES-04-24')
+                InlineKeyboardButton('📢 ɢʀᴏᴜᴘ ʀᴜʟᴇs 📢', url='https://telegra.ph/GROUP-RULES-04-24')
             ]]
-    
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
                         await (temp.MELCOW['welcome']).delete()
@@ -62,6 +61,7 @@ async def save_group(bot, message):
                 video=("https://telegra.ph/file/922ba803c3e701590dc97.mp4"),
                 caption=f"<b>💖 ʜᴇʟʟᴏ ᴍʏ ғʀɪᴇɴᴅ {u.mention},</b> <b>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ</b> <b>{message.chat.title} 💖</b>",
                 reply_markup=InlineKeyboardMarkup(buttons))
+                
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
