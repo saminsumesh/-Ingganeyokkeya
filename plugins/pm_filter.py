@@ -1366,11 +1366,11 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"🎪{file.file_name}🎪",
+                    text=f"🎪 {file.file_name} 🎪",
                     callback_data=f'{pre}#{file.file_id}',
                 ),
                 InlineKeyboardButton(
-                    text=f"🔮{get_size(file.file_size)}🔮",
+                    text=f"🔮 {get_size(file.file_size)} 🔮",
                     callback_data=f'{pre}_#{file.file_id}',
                 ),
             ]
@@ -1385,9 +1385,15 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text=f"📖 ᴘᴀɢᴇ 1/{round(int(total_results) / 10)}", callback_data="pages"),
              InlineKeyboardButton(text="ɴᴇxᴛ ⪼", callback_data=f"next_{req}_{key}_{offset}")]
         )
+        btn.insert(0,
+            [InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ɢʀᴏᴜᴘ 💢",url="https://t.me/movie_lookam")]
+        )
     else:
         btn.append(
             [InlineKeyboardButton(text="📖 ᴘᴀɢᴇ 1/1", callback_data="pages")]
+        )
+        btn.insert(0,
+            [InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ɢʀᴏᴜᴘ 💢",url="https://t.me/movie_lookam")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
