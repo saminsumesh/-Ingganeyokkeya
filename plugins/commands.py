@@ -47,7 +47,7 @@ async def start(client, message):
             InlineKeyboardButton('❗ ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-            InlineKeyboardButton('📢 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 📢', url='https://t.me/CL_UPDATE_CHANNEL')
+            InlineKeyboardButton('📢 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 📢', url='https://t.me/CL_UPDATE')
         ]]         
         reply_markup = InlineKeyboardMarkup(buttons)        
         await message.reply_photo(
@@ -66,7 +66,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🔥 JOIИ CHΛИИΞL 🔥", url=invite_link.invite_link
+                    "💢 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 💢", url=invite_link.invite_link
                 )
             ]
         ]
@@ -90,7 +90,7 @@ async def start(client, message):
             InlineKeyboardButton('❗ ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-            InlineKeyboardButton('📢 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 📢', url='https://t.me/CL_UPDATE_CHANNEL')
+            InlineKeyboardButton('📢 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 📢', url='https://t.me/CL_UPDATE')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
