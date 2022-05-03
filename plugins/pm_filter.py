@@ -773,7 +773,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🍁 ᴏᴡɴᴇʀ', url='https://t.me/NL_MP4'),
+            InlineKeyboardButton('🍁 ᴏᴡɴᴇʀ', callback_data='owner'),
             InlineKeyboardButton('🌿 ɢʀᴏᴜᴘ', url='https://t.me/movie_lookam')
             ],[      
             InlineKeyboardButton('❗ ʜᴇʟᴘ', callback_data='help'),
@@ -911,6 +911,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝗍𝗈 𝗆𝗒 𝖧𝖾𝗅𝗉 𝗆𝗈𝖽𝗎𝗅𝖾")
         await query.message.edit_text(
             text=script.HELP_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    
+    elif query.data == "owner":
+        buttons = [[       
+            InlineKeyboardButton('🔰 ɪɴsᴛᴀɢʀᴀᴍ 🔰', url='https://instagram.com/__nihaal_efx__?igshid=YmMyMTA2M2Y='),
+            InlineKeyboardButton('🔰 ᴛᴇʟᴇɢʀᴀᴍ 🔰', url='https://t.me/NL_MP4')
+        ], [
+ 
+            InlineKeyboardButton("⪻ ʙᴀᴄᴋ", callback_data="start"),
+            InlineKeyboardButton('ᴄʟᴏsᴇ ✘', callback_data='close_data')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.OWNER_TXT.format(temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
         )
