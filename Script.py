@@ -165,8 +165,8 @@ Do as you wish with telegra.ph module!
 • This Command Is Available in goups and pms
 • This Command Can be used by everyone"""
 
-    PRIVATEBOT_TXT = """<b>𝙿𝚁𝙸𝚅𝙰𝚃𝙴 𝙱𝙾𝚃 𝙵𝙾𝚁 𝚈𝙾𝚄</b>
-<b>›› 𝙼𝙰𝙺𝙴 𝚈𝙾𝚄𝚁 𝙱𝙾𝚃 𝙵𝙾𝚁𝙼 𝙲𝙻𝙾𝙽𝙴 (𝙴𝚅𝙰𝙼𝙰𝚁𝙸𝙰)"""
+    PRIVATEBOT_TXT = """<b>𝙷𝙴𝙻𝙻𝙾 𝙼𝚈 𝙵𝚁𝙸𝙴𝙽𝙳 {}</b>
+<b>›› 𝙸 𝙰𝙼 𝙰 𝙹𝚄𝚂𝚃 𝙿𝙾𝚆𝙴𝚁𝙵𝚄𝙻𝙻 𝙱𝙾𝚃 . 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝚂𝙴𝙴 𝙼𝚈 𝙿𝙾𝚆𝙴𝚁 😊"""
 
     JSON_TXT ="""<b>JSON:</b>
 
