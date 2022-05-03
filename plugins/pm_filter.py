@@ -854,7 +854,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝙵𝙸𝙻𝙴-𝚂𝚃𝙾𝚁𝙴', callback_data='newdata'),
             InlineKeyboardButton('𝚂𝚃𝙰𝚃𝚄𝚂', callback_data='stats')
             ],[
-            InlineKeyboardButton('𝙷𝙾𝚆 𝚃𝙾 𝙳𝙴𝙿𝙻𝙾𝚈..?', callback_data='deploy')
+            InlineKeyboardButton('𝙾𝚆𝙽𝙴𝚁', url='https://t.me/NL_MP4')
             ],[
             InlineKeyboardButton('⪻ ʙᴀᴄᴋ', callback_data='start')
         ]]
@@ -902,7 +902,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝙵𝙸𝙻𝙴-𝚂𝚃𝙾𝚁𝙴', callback_data='newdata'),
             InlineKeyboardButton('𝚂𝚃𝙰𝚃𝚄𝚂', callback_data='stats')
             ],[
-            InlineKeyboardButton('𝙷𝙾𝚆 𝚃𝙾 𝙳𝙴𝙿𝙻𝙾𝚈..?', callback_data='deploy')
+            InlineKeyboardButton('𝙾𝚆𝙽𝙴𝚁', url='https://t.me/NL_MP4')
             ],[
             InlineKeyboardButton('⪻ ʙᴀᴄᴋ', callback_data='start')
         ]]
