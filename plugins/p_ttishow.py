@@ -58,7 +58,7 @@ async def save_group(bot, message):
                     except:
                         pass
                 temp.MELCOW['welcome'] = await message.reply_text(
-                text=f"<b>👋 Hi! {u.mention},</b> Welcome to <b>{message.chat.title}</b>\n\n<b>👇 Official Projects Channels 👇</b>",
+                text=f"<b>💖 𝙷𝙴𝙻𝙻𝙾 𝙼𝚈 𝙵𝚁𝙸𝙴𝙽𝙳 {u.mention},</b><b> 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 </b><b>{message.chat.title} 💖</b>\n\n<b>✨ 𝙷𝙰𝚅𝙴 𝙰 𝙽𝙸𝙲𝙴 𝙳𝙰𝚈 ✨</b>",
                 disable_web_page_preview = True,
                 reply_markup=InlineKeyboardMarkup(buttons))
 
