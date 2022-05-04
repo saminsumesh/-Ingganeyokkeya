@@ -46,9 +46,7 @@ async def save_group(bot, message):
             caption=f"<b>💖 𝚃𝙷𝙰𝙽𝙺 𝚈𝙾𝚄 𝙵𝙾𝚁 𝙰𝙳𝙳𝙸𝙽𝙶 {message.chat.title} 💖\n\n✨ 𝙸𝙵 𝚈𝙾𝚄 𝙷𝙰𝚅𝙴 𝙰𝙽𝚈 𝚀𝚄𝙴𝚂𝚃𝙸𝙾𝙽 & 𝙳𝙾𝚄𝙱𝚃 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙼𝚈 𝙾𝚆𝙽𝙴𝚁 ✨</b>",
             reply_markup=reply_markup)
     else:
-        settings = await get_settings(message.chat.id)
-        if settings["welcome"]:
-            for u in message.new_chat_members:
+        for u in message.new_chat_members:
                 buttons = [[
                 InlineKeyboardButton('📢 ɢʀᴏᴜᴘ ʀᴜʟᴇs', url="https://telegra.ph/GROUP-RULES-04-24")
             ]]
