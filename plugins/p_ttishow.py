@@ -48,15 +48,16 @@ async def save_group(bot, message):
     else:
         for u in message.new_chat_members:
                 buttons = [[
-                InlineKeyboardButton('📢 ɢʀᴏᴜᴘ ʀᴜʟᴇs', url="https://telegra.ph/GROUP-RULES-04-24")
+                InlineKeyboardButton('🔰 ɢʀᴏᴜᴘ ʀᴜʟᴇs 🔰', url="https://telegra.ph/GROUP-RULES-04-24")
             ]]
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
-                temp.MELCOW['welcome'] = await message.reply_text(
-                text=f"<b>💖 𝙷𝙴𝙻𝙻𝙾 𝙼𝚈 𝙵𝚁𝙸𝙴𝙽𝙳 {u.mention},</b><b> 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 </b><b>{message.chat.title} 💖</b>\n\n<b>✨ 𝙷𝙰𝚅𝙴 𝙰 𝙽𝙸𝙲𝙴 𝙳𝙰𝚈 ✨</b>",
+                temp.MELCOW['welcome'] = await message.reply_video(
+                video="https://telegra.ph/file/922ba803c3e701590dc97.mp4",
+                caption=f"<b>💖 𝙷𝙴𝙻𝙻𝙾 𝙼𝚈 𝙵𝚁𝙸𝙴𝙽𝙳 {u.mention},</b><b> 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 </b><b>{message.chat.title} 💖</b>\n\n<b>✨ 𝙷𝙰𝚅𝙴 𝙰 𝙽𝙸𝙲𝙴 𝙳𝙰𝚈 𝙱𝚁𝙾𝚃𝙷𝙴𝚁 & 𝚂𝙸𝚂𝚃𝙴𝚁 ✨</b>",
                 disable_web_page_preview = True,
                 reply_markup=InlineKeyboardMarkup(buttons))
 
