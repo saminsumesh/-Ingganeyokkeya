@@ -476,7 +476,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ms = await client.send_cached_media(
                     chat_id=CH_FILTER,
                     file_id=file_id,
-                    caption=f'<b><i>📟 Name : <a href=https://t.me/movie_lookam>{title}</a></i></b>\n\n<b><i>🎗 Size : {size}</b></i>\n\n⚠️ Tʜɪꜱ Mᴇꜱꜱᴀɢᴇ Wɪʟʟ Bᴇ Aᴜᴛᴏ-Dᴇʟᴇᴛᴇᴅ Iɴ Nᴇxᴛ 𝟻 Mɪɴᴜᴛᴇꜱ Tᴏ Aᴠᴏɪᴅ Cᴏᴘʏʀɪɢʜᴛ Iꜱꜱᴜᴇꜱ.Sᴏ Fᴏʀᴡᴀʀᴅ Tʜɪꜱ Fɪʟᴇ Tᴏ Aɴʏᴡʜᴇʀᴇ Eʟꜱᴇ Bᴇғᴏʀᴇ Dᴏᴡɴʟᴏᴀᴅɪɴɢ.. ⚠️\n\n<b><i>🧑🏻‍💻 Requested By : {query.from_user.mention}\n🚀 Group : {query.message.chat.title}</i></b>',
+                    caption=f'<b>🗂️ ɴᴀᴍᴇ : <a href=https://t.me/movie_lookam>{title}</a></b>\n\n<b>⚙️ sɪᴢᴇ : {size}</b>\n\n⚠️ 𝐓𝐡𝐢𝐬 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𝐖𝐢𝐥𝐥 𝐁𝐞 𝐀𝐮𝐭𝐨-𝐃𝐞𝐥𝐞𝐭𝐞𝐝 𝐈𝐧 𝐍𝐞𝐱𝐭 𝟓 𝐌𝐢𝐧𝐮𝐭𝐞𝐬 𝐓𝐨 𝐀𝐯𝐨𝐢𝐝 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 𝐈𝐬𝐬𝐮𝐞𝐬.𝐒𝐨 𝐅𝐨𝐫𝐰𝐚𝐫𝐝 𝐓𝐡𝐢𝐬 𝐅𝐢𝐥𝐞 𝐓𝐨 𝐀𝐧𝐲𝐰𝐡𝐞𝐫𝐞 𝐄𝐥𝐬𝐞 𝐁𝐞𝐟𝐨𝐫𝐞 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠.. ⚠️\n\n<b><i>🧑🏻‍💻 Requested By : {query.from_user.mention}\n🚀 Group : {query.message.chat.title}</i></b>',
                     protect_content=True if ident == "filep" else False 
                 )
                 msg1 = await query.message.reply(
