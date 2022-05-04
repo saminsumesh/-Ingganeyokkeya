@@ -50,7 +50,7 @@ async def save_group(bot, message):
         if settings["welcome"]:
             for u in message.new_chat_members:
                 buttons = [[
-                InlineKeyboardButton('📢 ɢʀᴏᴜᴘ ʀᴜʟᴇs', url="https://t.me/josprojects")
+                InlineKeyboardButton('📢 ɢʀᴏᴜᴘ ʀᴜʟᴇs', url="https://telegra.ph/GROUP-RULES-04-24")
             ]]
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
