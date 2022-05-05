@@ -58,7 +58,6 @@ async def save_group(bot, message):
                 temp.MELCOW['welcome'] = await message.reply_video(
                 video="https://telegra.ph/file/922ba803c3e701590dc97.mp4",
                 caption=f"<b>💖 𝙷𝙴𝙻𝙻𝙾 𝙼𝚈 𝙵𝚁𝙸𝙴𝙽𝙳 {u.mention},</b><b> 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 </b><b>{message.chat.title} 💖</b>\n\n<b>✨ 𝙷𝙰𝚅𝙴 𝙰 𝙽𝙸𝙲𝙴 𝙳𝙰𝚈 𝙱𝚁𝙾𝚃𝙷𝙴𝚁 & 𝚂𝙸𝚂𝚃𝙴𝚁 ✨</b>",
-                disable_web_page_preview = True,
                 reply_markup=InlineKeyboardMarkup(buttons))
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
