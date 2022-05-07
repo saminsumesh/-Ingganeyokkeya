@@ -1411,6 +1411,12 @@ async def auto_filter(client, msg, spoll=False):
         btn.insert(0,
             [InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ɢʀᴏᴜᴘ 💢",url="https://t.me/movie_lookam")]
         )
+        btn.insert(1,
+          [
+            InlineKeyboardButton(f'𝖥𝗂𝗅𝖾𝗌 : {len(files)}', 'dupe'),
+            InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'tips')
+          ]
+       )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
     if imdb:
