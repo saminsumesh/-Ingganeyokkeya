@@ -1,6 +1,6 @@
 class script(object):
-    START_TXT = """𝙷𝙴𝙻𝙾 {},
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽.. 𝚃𝙷𝙴𝙽 𝚂𝙴𝙴 𝙼𝚈 𝙿𝙾𝚆𝙴𝚁𝚂 ♥️♥️🔥"""
+    START_TXT = """<b>𝙷𝙴𝙻𝙾 {},
+𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽.. 𝚃𝙷𝙴𝙽 𝚂𝙴𝙴 𝙼𝚈 𝙿𝙾𝚆𝙴𝚁𝚂 😈</b>"""
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """<b>✮ 𝙼𝚈 𝙽𝙰𝙼𝙴: 𝚃𝙷𝙾𝙼𝙰𝚂 𝚂𝙷𝙴𝙻𝙱𝚈</b>
@@ -78,10 +78,10 @@ Note:- Give a user details
 
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
-- Filter is the feature were users can set automated replies for a particular keyword and ᗩᒍᗩ᙭  will respond whenever a keyword is found the message
+» Filter is the feature were users can set automated replies for a particular keyword and bot  will respond whenever a keyword is found the message
 
 <b>NOTE:</b>
-1. ᗩᒍᗩ᙭ should have admin privillage.
+1. BOT should have admin privillage.
 2. only admins can add filters in a chat.
 3. alert buttons have a limit of 64 characters.
 
@@ -94,9 +94,9 @@ Note:- Give a user details
 
 <b>𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙾𝙳𝚄𝙻𝙴, 𝙵𝙾𝚁 𝚃𝙷𝙾𝚂𝙴 𝚆𝙷𝙾 𝙻𝙾𝚅𝙴 𝙼𝚄𝚂𝙸𝙲. 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙵𝙴𝙰𝚃𝚄𝙴 𝙵𝙾𝚁 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙰𝙽𝚈 𝚂𝙾𝙽𝙶 𝚆𝙸𝚃𝙷 𝚂𝚄𝙿𝙴𝚁 𝙵𝙰𝚂𝚃 𝚂𝙿𝙴𝙴𝙳.𝚆𝙾𝚁𝙺𝚂 𝙾𝙽𝙻𝚈 𝙾𝙽 𝙶𝚁𝙾𝚄𝙿𝚂../</b>
 
-<b>𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂</b>
+☆ <b>𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂</b> ☆
 
-››  /song 𝚂𝙾𝙽𝙶 𝙽𝙰𝙼𝙴 
+☆ /song 𝚂𝙾𝙽𝙶 𝙽𝙰𝙼𝙴 
 
 𝚆𝙾𝚁𝙺𝚂 𝙾𝙽𝙻𝚈 𝙾𝙽 𝙶𝚁𝙾𝚄𝙿
 
@@ -144,10 +144,10 @@ Helps you to know your ping 🚶🏼‍♂️
 • /alive - To check you are alive.
 • /help - To get help.
 • /ping - To get your ping.
-• /repo - Source Code.
 • /channel - Channel Details.
-• /ajax - Bot Link.
-<b>🏹Usage🏹 :</b>
+• /thomas - Bot Link.
+
+<b>☆ 𝐔𝐒𝐄𝐀𝐆𝐄 ☆ :</b>
 
 • This commands can be used in pms and groups
 • This commands can be used buy everyone in the groups and bots pm
@@ -158,7 +158,7 @@ Do as you wish with telegra.ph module!
 
 </b>USAGE:</b>
 
-🤧 /telegraph - Send me Picture or Vide Under (5MB)
+◉ /telegraph - Send me Picture or Vide Under (5MB)
 
 <b>NOTE:</b>
 
@@ -294,17 +294,21 @@ This module only works for my admins
 
 ➪ /short: 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗐𝗂𝗍𝗁 𝗒𝗈𝗎𝗋 𝗅𝗂𝗇𝗄 𝗍𝗈 𝗀𝖾𝗍 𝗌𝗁𝗈𝗋𝗍𝖾𝖽 𝗅𝗂𝗇𝗄𝗌
 
-➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
+➛ 𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
 <code>/short https://youtu.be/kB9TkCs8cX0</code>"""
 
     VIDEO_TXT ="""𝙷𝙴𝙻𝙿 𝚈𝙾𝚄 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝚅𝙸𝙳𝙴𝙾 𝙵𝚁𝙾𝙼 𝚈𝙾𝚄𝚃𝚄𝙱𝙴.
 
-• 𝘜𝘴𝘢𝘨𝘦
-𝘠𝘰𝘶 𝘊𝘢𝘯 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘈𝘯𝘺 𝘝𝘪𝘥𝘦𝘰 𝘍𝘳𝘰𝘮 𝘠𝘰𝘶𝘵𝘶𝘣𝘦
+◉ 𝐔𝐒𝐄𝐀𝐆𝐄
 
-𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
-• 𝘛𝘺𝘱𝘦 /video or /mp4 𝘈𝘯𝘥 (https://youtu.be/kB9TkCs8cX0)
-• 𝘌𝘹𝘢𝘮𝘱𝘭𝘦:
+𝐘𝐎𝐔 𝐂𝐀𝐍 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐀𝐍𝐘 𝐕𝐈𝐃𝐄𝐎 𝐅𝐑𝐎𝐌 𝐘𝐎𝐔𝐓𝐔𝐁𝐄
+
+📺 𝐇𝐎𝐖 𝐓𝐎 𝐔𝐒𝐄
+
+• 𝐓𝐘𝐏𝐄 /video or /mp4 𝐀𝐍𝐃 (https://youtu.be/kB9TkCs8cX0)
+
+• 𝐄𝐗𝐀𝐌𝐏𝐋𝐄:
+
 <code>/mp4 https://youtu.be/kB9TkCs8cX0</code>
 <code>/video https://youtu.be/kB9TkCs8cX0</code>"""
 
@@ -332,16 +336,17 @@ This module only works for my admins
 • 𝐔𝐒𝐀𝐆𝐄
 To Get Sticker ID
  
-  ⭕ 𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
+ ⭕ 𝐇𝐎𝐖 𝐓𝐎 𝐔𝐒𝐄
  
 ◉ Reply To Any Sticker [/stickerid]"""
 
     YTTHUMB_TXT = """𝙷𝙴𝙻𝙿𝚂 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙰𝙽𝚈 𝚈𝙾𝚄𝚃𝚄𝙱𝙴 𝚅𝙸𝙳𝙴𝙾 𝚃𝙷𝚄𝙼𝙱𝙽𝙰𝙸𝙻
     
-⭕𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
-𝘛𝘺𝘱𝘦 /ytthumb 𝘈𝘯𝘥 𝘝𝘪𝘥𝘦𝘰 𝘓𝘪𝘯𝘬
+⭕ 𝐇𝐎𝐖 𝐓𝐎 𝐔𝐒𝐄
+𝐓𝐘𝐏𝐄 /ytthumb 𝐀𝐍𝐃 𝐒𝐄𝐍𝐓 𝐘𝐎𝐔𝐑 𝐋𝐈𝐍𝐊
 
-• 𝘌𝘹𝘢𝘮𝘱𝘭𝘦
+◉ 𝐄𝐗𝐀𝐌𝐏𝐋𝐄
+
 <code>/ytthumb https://youtu.be/UyzJ9KEoU0w</code>"""
 
     ABOOK_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝖠𝗎𝖽𝗂𝗈𝖻𝗈𝗈𝗄
