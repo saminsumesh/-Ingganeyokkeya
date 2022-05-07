@@ -1404,6 +1404,12 @@ async def auto_filter(client, msg, spoll=False):
         btn.insert(0,
             [InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ɢʀᴏᴜᴘ 💢",url="https://t.me/movie_lookam")]
         )
+        btn.insert(1,
+          [
+            InlineKeyboardButton(f'✨ {search} ✨', 'dupe'),
+            InlineKeyboardButton(f'🗂️ ғɪʟᴇs : {len(files)}', 'dupe')
+          ]
+        )
     else:
         btn.append(
             [InlineKeyboardButton(text="🗓️ ᴘᴀɢᴇ 1/1", callback_data="pages")]
@@ -1413,8 +1419,8 @@ async def auto_filter(client, msg, spoll=False):
         )
         btn.insert(1,
           [
-            InlineKeyboardButton(f'🗂️ ғɪʟᴇs : {len(files)}', 'dupe'),
-            InlineKeyboardButton(f'✨ {search} ✨', 'dupe')
+            InlineKeyboardButton(f'✨ {search} ✨', 'dupe'),
+            InlineKeyboardButton(f'🗂️ ғɪʟᴇs : {len(files)}', 'dupe')
           ]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
