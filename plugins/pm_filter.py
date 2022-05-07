@@ -779,7 +779,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('❗ ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-            InlineKeyboardButton('📢 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 📢', url='https://t.me/CL_UPDATE')
+            InlineKeyboardButton('🔗 ᴏᴜʀ ʟɪɴᴋ ᴄʜᴀɴɴᴇʟ 🔗', url='https://t.me/CL_UPDATE')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1259,7 +1259,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('⪻ ʙᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('ʀᴇғʀᴇsʜ', callback_data='rfrsh')
+            InlineKeyboardButton('♻️ ʀᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -1278,7 +1278,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
             InlineKeyboardButton('⪻ ʙᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('ʀᴇғʀᴇsʜ', callback_data='rfrsh')
+            InlineKeyboardButton('♻️ ʀᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -1406,17 +1406,17 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="📃 ᴘᴀɢᴇ 1/1", callback_data="pages")]
+            [InlineKeyboardButton(text="🗓️ ᴘᴀɢᴇ 1/1", callback_data="pages")]
         )
         btn.insert(0,
             [InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ɢʀᴏᴜᴘ 💢",url="https://t.me/movie_lookam")]
         )
         btn.insert(1,
           [
-            InlineKeyboardButton(f'𝖥𝗂𝗅𝖾𝗌 : {len(files)}', 'dupe'),
-            InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'tips')
+            InlineKeyboardButton(f'🗂️ ғɪʟᴇs : {len(files)}', 'dupe'),
+            InlineKeyboardButton(f'✨ {search} ✨', 'dupe')
           ]
-       )
+        )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
     if imdb:
