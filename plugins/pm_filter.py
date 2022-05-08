@@ -1420,7 +1420,7 @@ async def auto_filter(client, msg, spoll=False):
         )
         btn.insert(1,
           [
-            InlineKeyboardButton(f'🎬 {search} 🎬', 'dupe'),
+            InlineKeyboardButton(f'📺 {search} 📺', 'dupe'),
             InlineKeyboardButton(f'🗂️ ғɪʟᴇs : {len(files)}', 'dupe')
           ]
         )
@@ -1433,7 +1433,7 @@ async def auto_filter(client, msg, spoll=False):
         )
         btn.insert(1,
           [
-            InlineKeyboardButton(f'🎬 {search} 🎬', 'dupe'),
+            InlineKeyboardButton(f'📺 {search} 📺', 'dupe'),
             InlineKeyboardButton(f'🗂️ ғɪʟᴇs : {len(files)}', 'dupe')
           ]
         )
