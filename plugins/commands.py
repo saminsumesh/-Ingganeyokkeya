@@ -79,7 +79,7 @@ async def start(client, message):
         await client.send_photo(
             photo="https://telegra.ph/file/f5d411fba25ecfa5197fe.jpg",
             chat_id=message.from_user.id,
-            caption="<b>☆ ʜᴇʟʟᴏ ᴍʏ ғʀɪᴇɴᴅ\n\n☆ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴊᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ʀᴇsᴜʟᴛ ☆</b>",
+            caption="<b>☆ ʜᴇʟʟᴏ ᴍʏ ғʀɪᴇɴᴅ ☆</b>\n\n<b>☆ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴊᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ʀᴇsᴜʟᴛ ☆</b>",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
@@ -342,12 +342,12 @@ async def delete_all_index(bot, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="⚡ 𝐘𝐞𝐬 ⚡", callback_data="autofilter_delete"
+                        text="𝐘𝐞𝐬", callback_data="autofilter_delete"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        text="❄ 𝐂𝐚𝐧𝐜𝐞𝐥 ❄", callback_data="close_data"
+                        text="𝐂𝐚𝐧𝐜𝐞𝐥", callback_data="close_data"
                     )
                 ],
             ]
