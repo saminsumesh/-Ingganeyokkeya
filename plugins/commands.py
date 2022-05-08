@@ -79,7 +79,7 @@ async def start(client, message):
         await client.send_photo(
             photo="https://telegra.ph/file/f5d411fba25ecfa5197fe.jpg",
             chat_id=message.from_user.id,
-            caption="<b>☆ ʜᴇʟʟᴏ ᴍʏ ғʀɪᴇɴᴅ ☆</b>\n\n<b>☆ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴊᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ʀᴇsᴜʟᴛ ☆</b>",
+            caption="☆ ʜᴇʟʟᴏ ᴍʏ ғʀɪᴇɴᴅ ☆\n\n☆ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴊᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ʀᴇsᴜʟᴛ ☆",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
