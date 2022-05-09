@@ -66,11 +66,7 @@ def song(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = "<b>🎷</b>: <a href={https://t.me/movie_lookam}>{title}</a>
-
-🎙 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧 : {runtime} 𝐌𝐢𝐧𝐮𝐭𝐞𝐬
-
-🚀 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲 : <b>{message.from_user.mention}</b>"
+        rep = "<b>🎷</b>: <a href={https://t.me/movie_lookam}>{title}</a>\n\n🎙 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧 : {runtime} 𝐌𝐢𝐧𝐮𝐭𝐞𝐬\n\n🚀 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲 : <b>{message.from_user.mention}</b>"
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
