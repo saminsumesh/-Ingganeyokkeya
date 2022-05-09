@@ -36,7 +36,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply("**ѕєαrchíng чσur ѕσng...!**")
+    m = message.reply("☆ 𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠 𝐅𝐨𝐫 𝐘𝐨𝐮𝐫 𝐒𝐨𝐧𝐠 ☆")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -60,13 +60,17 @@ def song(client, message):
         )
         print(str(e))
         return
-    m.edit("**dσwnlσαdíng чσur ѕσng...!**")
+    m.edit("☆ 𝐔𝐩𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐘𝐨𝐮𝐫 𝐒𝐨𝐧𝐠.... ☆")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = '**ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ›› [ᴄʟ ᴜᴘᴅᴀᴛᴇ](https://t.me/movie_lookam)**\n**𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 ›› [muѕíc вσч](https://t.me/NL_MP4)**'
+        rep = "<b>🎷</b>: <a href={https://t.me/movie_lookam}>{title}</a>
+
+🎙 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧 : {runtime} 𝐌𝐢𝐧𝐮𝐭𝐞𝐬
+
+🚀 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲 : <b>{message.from_user.mention}</b>"
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
