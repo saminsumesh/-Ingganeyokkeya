@@ -62,19 +62,21 @@ def song(client, message):
         return
     m.edit("☆ 𝐔𝐩𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐘𝐨𝐮𝐫 𝐒𝐨𝐧𝐠.... ☆")
     try:
-        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+        with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f'<b>🦋 ᴛɪᴛʟᴇ »</b> <a href="{https://t.me/movie_lookam}">{title}</a>\n\n<b>🎙️ᴅᴜʀᴀᴛɪᴏɴ »</b> <code>{duration}</code>\n<b>📺 ᴠɪᴇᴡs »</b> <code>{views}</code>\n<b>🗣️ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ »</b> {message.from_user.mention()}'
+        rep = f'<b>𝚃𝙸𝚃𝙻𝙴 ››</b> <a href="{link}">{title}</a>\n\n<b>𝙳𝚄𝚁𝙰𝚃𝙸𝙾𝙽 ››</b> <code>{duration}</code>\n<b>𝚅𝙸𝙴𝚆𝚂 ››</b> <code>{views}</code>\n<b>𝚁𝙴𝚀𝚄𝙴𝚂𝚃𝙴𝙳 𝙱𝚈 ››</b> {message.from_user.mention()}'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
             secmul *= 60
-        message.reply_audio(audio_file, caption=rep, parse_mode='md',quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
+        message.reply_audio(audio_file, caption=rep, parse_mode='HTML',quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
+        message.delete()
     except Exception as e:
-        m.edit("**🚫 𝙴𝚁𝚁𝙾𝚁 🚫**")
+        m.edit('**An Error Occured. Please Report This To** @jospsupport !!')
+        print(e)
         print(e)
 
     try:
