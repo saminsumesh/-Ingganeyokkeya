@@ -514,12 +514,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer(f"Hey, {query.from_user.first_name}! ☆ 𝐇𝐄𝐘 {query.from_user.first_name} 𝐈 𝐋𝐈𝐊𝐄 𝐘𝐎𝐔𝐑 𝐒𝐌𝐀𝐑𝐓𝐍𝐄𝐒 ! 𝐁𝐔𝐓 𝐃𝐎𝐍𝐓 𝐁𝐄 𝐎𝐕𝐄𝐑𝐒𝐌𝐀𝐑𝐓 😏",show_alert=True)
+            await query.answer(f"☆ 𝐇𝐄𝐘 {query.from_user.first_name} 𝐈 𝐋𝐈𝐊𝐄 𝐘𝐎𝐔𝐑 𝐒𝐌𝐀𝐑𝐓𝐍𝐄𝐒 ! 𝐁𝐔𝐓 𝐃𝐎𝐍𝐓 𝐁𝐄 𝐎𝐕𝐄𝐑𝐒𝐌𝐀𝐑𝐓 😏",show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
         if not files_:
-            return await query.answer('🦋 ʜᴇʟʟᴏ ᴍʏ ғʀɪᴇɴᴅ {query.from_user.first_name} sᴇɴᴛ ʀᴇǫᴜᴇsᴛ ᴀɢᴀɪɴ 🦋')
+            await query.answer('🦋 ʜᴇʟʟᴏ ᴍʏ ғʀɪᴇɴᴅ sᴇɴᴛ ʀᴇǫᴜᴇsᴛ ᴀɢᴀɪɴ 🦋')
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
@@ -1006,19 +1006,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.OWNER_TXT.format(temp.B_NAME),
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
-    elif query.data == "about":
-        buttons= [[
-            InlineKeyboardButton("⪻ ʙᴀᴄᴋ", callback_data='start'),
-            InlineKeyboardButton('○ ɢʀᴏᴜᴘ', url='https://t.me/CL_UPDATE'),
-            InlineKeyboardButton('ᴄʟᴏsᴇ ✘', callback_data='close_data')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.ABOUT_TXT.format(temp.B_NAME),
-            disable_web_page_preview = True,
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -1555,7 +1542,20 @@ async def auto_filter(client, msg, spoll=False):
         await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     if spoll:
         await msg.message.delete()
-
+        
+    elif query.data == "about":
+        buttons= [[
+            InlineKeyboardButton("⪻ ʙᴀᴄᴋ", callback_data='start'),
+            InlineKeyboardButton('○ ɢʀᴏᴜᴘ', url='https://t.me/CL_UPDATE'),
+            InlineKeyboardButton('ᴄʟᴏsᴇ ✘', callback_data='close_data')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.ABOUT_TXT.format(temp.B_NAME),
+            disable_web_page_preview = True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
 async def advantage_spell_chok(msg):
     query = re.sub(
         r"\b(pl(i|e)*?(s|z+|ease|se|ese|(e+)s(e)?)|((send|snd|giv(e)?|gib)(\sme)?)|movie(s)?|new|latest|br((o|u)h?)*|^h(e|a)?(l)*(o)*|mal(ayalam)?|t(h)?amil|file|that|find|und(o)*|kit(t(i|y)?)?o(w)?|thar(u)?(o)*w?|kittum(o)*|aya(k)*(um(o)*)?|full\smovie|any(one)|with\ssubtitle(s)?)",
