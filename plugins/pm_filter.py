@@ -514,12 +514,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer(f"Hey, {query.from_user.first_name}! I Like Your Smartness, But Don't Be Oversmart 😒",show_alert=True)
+            await query.answer(f"Hey, {query.from_user.first_name}! ☆ 𝐇𝐄𝐘 {query.from_user.first_name} 𝐈 𝐋𝐈𝐊𝐄 𝐘𝐎𝐔𝐑 𝐒𝐌𝐀𝐑𝐓𝐍𝐄𝐒 ! 𝐁𝐔𝐓 𝐃𝐎𝐍𝐓 𝐁𝐄 𝐎𝐕𝐄𝐑𝐒𝐌𝐀𝐑𝐓 😏",show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
         if not files_:
-            return await query.answer(f'Hello, {query.from_user.first_name}! No such file exist. Send Request Again')
+            return await query.answer('🦋 ʜᴇʟʟᴏ ᴍʏ ғʀɪᴇɴᴅ {query.from_user.first_name} sᴇɴᴛ ʀᴇǫᴜᴇsᴛ ᴀɢᴀɪɴ 🦋')
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
