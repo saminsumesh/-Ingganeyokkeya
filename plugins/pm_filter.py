@@ -783,9 +783,24 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "pages":
         await query.answer()
     elif query.data == "samst":
+
         buttons = [[
+
             InlineKeyboardButton('- ᴄʟɪᴄᴋ ʜᴇʀᴇ ғᴏʀ ᴍᴏʀᴇ ʙᴜᴛᴛᴏɴs -', callback_data='start')
+
         ]]
+
+        reply_markup = InlineKeyboardMarkup(buttons)
+
+        await query.message.edit_text(
+
+            text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
+
+            reply_markup=reply_markup,
+
+            parse_mode='html'
+
+        )
     elif query.data == "start":
         buttons = [[
             InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
@@ -796,7 +811,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('❗ ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-            InlineKeyboardButton('🔗 ᴏᴜʀ ʟɪɴᴋ ᴄʜᴀɴɴᴇʟ 🔗', url='https://t.me/+Tf1n6GNOErc0NWQ1')
+            InlineKeyboardButton('- ɢᴏ ʙᴀᴄᴋ ᴛᴏ ᴍᴀɪɴ -', callback_data='samst')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
