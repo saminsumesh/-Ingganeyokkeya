@@ -851,17 +851,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('𝙼𝙰-𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='manuelfilter'),
-            InlineKeyboardButton('𝙰𝚄-𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='autofilter'),
-            InlineKeyboardButton('𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙾𝙽', callback_data='coct')
+            InlineKeyboardButton('ᴍᴀ-ғɪʟᴛᴇʀ', callback_data='manuelfilter'),
+            InlineKeyboardButton('ᴀᴜ-ғɪʟᴛᴇʀ', callback_data='autofilter'),
+            InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛɪᴏɴ', callback_data='coct')
             ],[
-            InlineKeyboardButton('𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙿𝙷', callback_data='tele'),
-            InlineKeyboardButton('𝚂𝚃𝙸𝙲𝙺𝙴𝚁-𝙸𝙳', callback_data='sticker'),
-            InlineKeyboardButton('𝚈𝚃-𝚃𝙷𝚄𝙼𝙱', callback_data='ytthumb')
+            InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele'),
+            InlineKeyboardButton('sᴛɪᴄᴋᴇʀ-ɪᴅ', callback_data='sticker'),
+            InlineKeyboardButton('ʏᴛ-ᴛʜᴜᴍʙ', callback_data='ytthumb')
             ],[
-            InlineKeyboardButton('𝙵𝙸𝙻𝙴-𝚂𝚃𝙾𝚁𝙴', callback_data='newdata'),
-            InlineKeyboardButton('𝙰𝚄𝙳𝙸𝙾-𝙱𝙾𝙾𝙺', callback_data='abook'),
-            InlineKeyboardButton('𝚁𝙴𝙿𝙾𝚁𝚃', callback_data='report')
+            InlineKeyboardButton('ғɪʟᴇ-sᴛᴏʀᴇ', callback_data='newdata'),
+            InlineKeyboardButton('ᴀᴜᴅɪᴏ-ʙᴏᴏᴋ', callback_data='abook'),
+            InlineKeyboardButton('ʀᴇᴘᴏʀᴛ', callback_data='report')
             ],[
             InlineKeyboardButton('⪻ ʙᴀᴄᴋ', callback_data='start'),
             InlineKeyboardButton('🔮 sᴛᴀᴛᴜs', callback_data='stats'),
@@ -875,17 +875,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "eth":
         buttons = [[ 
-            InlineKeyboardButton('𝙶-𝚃𝚁𝙰𝙽𝚂', callback_data='gtrans'),
-            InlineKeyboardButton('𝚄𝚁𝙻-𝚂𝙷𝙾𝚁𝚃', callback_data='urlshort'),
-            InlineKeyboardButton('𝙴𝚇𝚃𝚁𝙰', callback_data='extra')
+            InlineKeyboardButton('ɢ-ᴛʀᴀɴs', callback_data='gtrans'),
+            InlineKeyboardButton('ᴜʀʟ-sʜʀᴛɴᴇʀ', callback_data='urlshort'),
+            InlineKeyboardButton('ᴇxᴛʀᴀ', callback_data='extra')
             ],[
-            InlineKeyboardButton('𝚂𝙾𝙽𝙶', callback_data='songs'),
-            InlineKeyboardButton('𝚃𝚃𝚂', callback_data='ttss'),
-            InlineKeyboardButton("𝚅𝙸𝙳𝙴𝙾", callback_data='video')            
+            InlineKeyboardButton('sᴏɴɢ', callback_data='songs'),
+            InlineKeyboardButton('ᴛᴛs', callback_data='ttss'),
+            InlineKeyboardButton("ᴠɪᴅᴇᴏ", callback_data='video')            
             ],[
-            InlineKeyboardButton("𝙸𝙼𝙰𝙶𝙴", callback_data='image'),
-            InlineKeyboardButton('𝙿𝚄𝚁𝙶𝙴', callback_data='purges'),
-            InlineKeyboardButton('𝚆𝙷𝙾𝙸𝚂', callback_data='whois')           
+            InlineKeyboardButton("ɪᴍᴀɢᴇ", callback_data='image'),
+            InlineKeyboardButton('ᴘᴜʀɢᴇ', callback_data='purges'),
+            InlineKeyboardButton('ᴡʜᴏ-ɪs', callback_data='whois')           
             ],[
             InlineKeyboardButton('⪻ ʙᴀᴄᴋ', callback_data='help'),
             InlineKeyboardButton('🔮 sᴛᴀᴛᴜs', callback_data='statsx'),
@@ -899,17 +899,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )  
     elif query.data == "prop":
         buttons = [[ 
-            InlineKeyboardButton('𝙹𝚂𝙾𝙽𝙴', callback_data='son'),
-            InlineKeyboardButton('𝙿𝙰𝚂𝚃𝙴', callback_data='pastes'),
-            InlineKeyboardButton('𝙲𝙾𝚅𝙸𝙳', callback_data='corona')
+            InlineKeyboardButton('ᴊsᴏɴᴇ', callback_data='son'),
+            InlineKeyboardButton('ᴘᴀsᴛᴇ', callback_data='pastes'),
+            InlineKeyboardButton('ᴄᴏᴠɪᴅ', callback_data='corona')
             ],[
-            InlineKeyboardButton('𝙺𝙸𝙲𝙺', callback_data='zombies'),
-            InlineKeyboardButton('𝙿𝙸𝙽𝙶', callback_data='pings'),
-            InlineKeyboardButton('𝙼𝚄𝚃𝙴', callback_data='restric')            
+            InlineKeyboardButton('ᴋɪᴄᴋ', callback_data='zombies'),
+            InlineKeyboardButton('ᴘɪɴɢ', callback_data='pings'),
+            InlineKeyboardButton('ᴍᴜᴛᴇ', callback_data='restric')            
             ],[
-            InlineKeyboardButton('𝙵𝚄𝙽', callback_data='fun'), 
-            InlineKeyboardButton('𝙳𝙴𝙿𝙻𝙾𝚈', callback_data='deploy'),
-            InlineKeyboardButton('𝙿𝙸𝙽', callback_data='pin')           
+            InlineKeyboardButton('ғᴜɴ', callback_data='fun'), 
+            InlineKeyboardButton('ᴅᴇᴘʟᴏʏ', callback_data='deploy'),
+            InlineKeyboardButton('ᴘɪɴ', callback_data='pin')           
             ],[
             InlineKeyboardButton('⪻ ʙᴀᴄᴋ', callback_data='eth'),
             InlineKeyboardButton('🔮 sᴛᴀᴛᴜs', callback_data='stats'),
@@ -1006,6 +1006,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.OWNER_TXT.format(temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "about":
+        buttons = [[
+            InlineKeyboardButton("⪻ ʙᴀᴄᴋ", callback_data='start'),
+            InlineKeyboardButton('○ ɢʀᴏᴜᴘ', url='https://t.me/CL_UPDATE'),
+            InlineKeyboardButton('ᴄʟᴏsᴇ ✘', callback_data='close_data')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.ABOUT_TXT.format(temp.B_NAME),
+            disable_web_page_preview = True,
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -1542,20 +1555,6 @@ async def auto_filter(client, msg, spoll=False):
         await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     if spoll:
         await msg.message.delete()
-        
-    elif query.data == "about":
-        buttons= [[
-            InlineKeyboardButton("⪻ ʙᴀᴄᴋ", callback_data='start'),
-            InlineKeyboardButton('○ ɢʀᴏᴜᴘ', url='https://t.me/CL_UPDATE'),
-            InlineKeyboardButton('ᴄʟᴏsᴇ ✘', callback_data='close_data')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.ABOUT_TXT.format(temp.B_NAME),
-            disable_web_page_preview = True,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
 async def advantage_spell_chok(msg):
     query = re.sub(
         r"\b(pl(i|e)*?(s|z+|ease|se|ese|(e+)s(e)?)|((send|snd|giv(e)?|gib)(\sme)?)|movie(s)?|new|latest|br((o|u)h?)*|^h(e|a)?(l)*(o)*|mal(ayalam)?|t(h)?amil|file|that|find|und(o)*|kit(t(i|y)?)?o(w)?|thar(u)?(o)*w?|kittum(o)*|aya(k)*(um(o)*)?|full\smovie|any(one)|with\ssubtitle(s)?)",
