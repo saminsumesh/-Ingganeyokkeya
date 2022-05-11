@@ -786,7 +786,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         buttons = [[
 
-            InlineKeyboardButton('- ᴄʟɪᴄᴋ ʜᴇʀᴇ ғᴏʀ ᴍᴏʀᴇ ʙᴜᴛᴛᴏɴs -', callback_data='start')
+            InlineKeyboardButton('ᴄʟɪᴄᴋ ʜᴇʀᴇ ғᴏʀ ᴍᴏʀᴇ ʙᴜᴛᴛᴏɴs', callback_data='start')
 
         ]]
 
@@ -811,7 +811,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('❗ ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-            InlineKeyboardButton('- ɢᴏ ʙᴀᴄᴋ ᴛᴏ ᴍᴀɪɴ -', callback_data='samst')
+            InlineKeyboardButton('ɢᴏ ʙᴀᴄᴋ ᴛᴏ ᴍᴀɪɴ ᴍᴇɴᴜ', callback_data='samst')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1011,9 +1011,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton("🌿 ɢʀᴏᴜᴘ", url='https://t.me/movie_lookam'),
-            InlineKeyboardButton("📢 ᴄʜᴀɴɴᴇʟ", url='https://t.me/CL_UPDATE')
-            ],[
+            InlineKeyboardButton("📢 ᴄʜᴀɴɴᴇʟ", url='https://t.me/CL_UPDATE'),
             InlineKeyboardButton('⪻ ʙᴀᴄᴋ', callback_data='start'),
             InlineKeyboardButton('ᴄʟᴏsᴇ ✘', callback_data='close_data')
         ]]
@@ -1486,7 +1484,7 @@ async def auto_filter(client, msg, spoll=False):
         )
         btn.insert(1,
           [
-            InlineKeyboardButton(f'📺 {search} 📺', 'dupe'),
+            InlineKeyboardButton(f'🦋 {search} 🦋', 'dupe'),
             InlineKeyboardButton(f'🗂️ ғɪʟᴇs : {len(files)}', 'dupe')
           ]
         )
@@ -1499,7 +1497,7 @@ async def auto_filter(client, msg, spoll=False):
         )
         btn.insert(1,
           [
-            InlineKeyboardButton(f'📺 {search} 📺', 'dupe'),
+            InlineKeyboardButton(f'🦋 {search} 🦋', 'dupe'),
             InlineKeyboardButton(f'🗂️ ғɪʟᴇs : {len(files)}', 'dupe')
           ]
         )
