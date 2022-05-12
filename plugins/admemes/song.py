@@ -78,7 +78,7 @@ def a(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f'<b>🎸 ᴛɪᴛᴛʟᴇ ››</b> <a href="{link}">{title}</a>\n\n<b>🎙️ ᴅᴜʀᴀᴛɪᴏɴ ››</b> <code>{duration}</code>\n\n<b>📺 ᴠɪᴇᴡs  ››</b><code>{views}</code>\n\n<b>🗣️ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ ››</b> {message.from_user.mention()}'
+        rep = f'<b>🎸 ᴛɪᴛᴛʟᴇ ››</b> <a href=https://t.me/movie_lookam>{title}</a>\n<b>🎙️ ᴅᴜʀᴀᴛɪᴏɴ ››</b> <code>{duration}</code>\n<b>📺 ᴠɪᴇᴡs  ››</b><code>{views}</code>\n<b>🗣️ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ ››</b> {message.from_user.mention()}'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
