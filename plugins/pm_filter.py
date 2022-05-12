@@ -216,6 +216,28 @@ async def next_page(bot, query):
                 InlineKeyboardButton("ɴᴇxᴛ ⪼", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
+        btn.insert(0,
+            [InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ɢʀᴏᴜᴘ 💢",url="https://t.me/movie_lookam")]
+        )
+        btn.insert(1,
+          [
+            InlineKeyboardButton(f'🦋  {search}  🦋', 'dupe'),
+            InlineKeyboardButton(f'🗂️ ғɪʟᴇs : {len(files)}', 'dupe')
+          ]
+        )
+    else:
+        btn.append(
+            [InlineKeyboardButton(text="🗓️ ᴘᴀɢᴇ 1/1", callback_data="pages")]
+        )
+        btn.insert(0,
+            [InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ɢʀᴏᴜᴘ 💢",url="https://t.me/movie_lookam")]
+        )
+        btn.insert(1,
+          [
+            InlineKeyboardButton(f'🦋  {search}  🦋', 'dupe'),
+            InlineKeyboardButton(f'🗂️ ғɪʟᴇs : {len(files)}', 'dupe')
+          ]
+        )
     try:
         await query.edit_message_reply_markup(
             reply_markup=InlineKeyboardMarkup(btn)
