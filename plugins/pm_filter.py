@@ -1600,8 +1600,8 @@ async def advantage_spell_chok(msg):
     SPELL_CHECK[msg.message_id] = movielist
     btn = [[
         InlineKeyboardButton(
-            text=movie.strip(『),
-            callback_data=f"spolling#{user}#{k}",
+            text=movie.strip(),
+            callback_data=f"💢 spolling#{user}#{k}』",
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="ᴄʟᴏsᴇ ✘", callback_data=f'spolling#{user}#close_spellcheck')])
