@@ -500,7 +500,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                             InlineKeyboardButton("📥  ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ  📥", url = ms.link)
                         ],
                         [
-                            InlineKeyboardButton("", url = f"{CH_LINK}")
+                            InlineKeyboardButton("⚠️ ᴄᴀɴɴᴏᴛ ᴠɪᴇᴡ ᴛʜᴇ ғɪʟᴇ ❓ ᴄʟɪᴄᴋ ʜᴇʀᴇ ⚠️", url = f"{CH_LINK}")
                         ]
                     ]
                 )
@@ -514,7 +514,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer(f"☆ 𝐇𝐄𝐘 {query.from_user.first_name} 𝐈 𝐋𝐈𝐊𝐄 𝐘𝐎𝐔𝐑 𝐒𝐌𝐀𝐑𝐓𝐍𝐄𝐒 ! 𝐁𝐔𝐓 𝐃𝐎𝐍𝐓 𝐁𝐄 𝐎𝐕𝐄𝐑𝐒𝐌𝐀𝐑𝐓 😏",show_alert=True)
+            await query.answer(f"☆ 𝐇𝐄𝐘 <b>{query.from_user.first_name}</b> 𝐈 𝐋𝐈𝐊𝐄 𝐘𝐎𝐔𝐑 𝐒𝐌𝐀𝐑𝐓𝐍𝐄𝐒 ! 𝐁𝐔𝐓 𝐃𝐎𝐍𝐓 𝐁𝐄 𝐎𝐕𝐄𝐑𝐒𝐌𝐀𝐑𝐓 😏",show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
@@ -1231,7 +1231,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "extra":
         buttons = [[
             InlineKeyboardButton('⪻ ʙᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('👩‍💻 ᴀᴅᴍɪɴ', callback_data='admin')
+            InlineKeyboardButton('👮🏻‍♂️ ᴀᴅᴍɪɴ', callback_data='admin')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1485,7 +1485,7 @@ async def auto_filter(client, msg, spoll=False):
         )
         btn.insert(1,
           [
-            InlineKeyboardButton(f'🦋 {search} 🦋', 'dupe'),
+            InlineKeyboardButton(f'🦋  {search}  🦋', 'dupe'),
             InlineKeyboardButton(f'🗂️ ғɪʟᴇs : {len(files)}', 'dupe')
           ]
         )
@@ -1498,7 +1498,7 @@ async def auto_filter(client, msg, spoll=False):
         )
         btn.insert(1,
           [
-            InlineKeyboardButton(f'🦋 {search} 🦋', 'dupe'),
+            InlineKeyboardButton(f'🦋  {search}  🦋', 'dupe'),
             InlineKeyboardButton(f'🗂️ ғɪʟᴇs : {len(files)}', 'dupe')
           ]
         )
