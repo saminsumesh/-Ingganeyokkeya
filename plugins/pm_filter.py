@@ -1599,10 +1599,10 @@ async def advantage_spell_chok(msg):
         return
     SPELL_CHECK[msg.message_id] = movielist
     btn = [[
-        InlineKeyboardButton(
+        InlineKeyboardButton(『
             text=movie.strip(),
-            callback_data=f"💢 spolling#{user}#{k}』",
-        )
+            callback_data=f"spolling#{user}#{k}",
+       』)
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="ᴄʟᴏsᴇ ✘", callback_data=f'spolling#{user}#close_spellcheck')])
     await msg.reply("<b>⚠︎ 𝙸 𝙲𝙾𝚄𝙻𝙳𝙽'𝚃 𝙵𝙸𝙽𝙳 𝙰𝙽𝚈𝚃𝙷𝙸𝙽𝙶 𝚁𝙴𝙻𝙰𝚃𝙴𝙳 𝚃𝙾 𝚃𝙷𝙰𝚃 ⚠︎\n🔰 𝙳𝙸𝙳 𝚈𝙾𝚄 𝙼𝙴𝙰𝙽 𝙰𝙽𝚈𝚃𝙷𝙸𝙽𝙶 𝙾𝙵 𝚃𝙷𝙴𝚂𝙴 🔰</b>",
