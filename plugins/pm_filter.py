@@ -204,6 +204,16 @@ async def next_page(bot, query):
              InlineKeyboardButton(f"🗓️ ᴘᴀɢᴇ {round(int(offset) / 10) + 1} / {round(total / 10)}",
                                   callback_data="pages")]
         )
+        
+        btn.insert(0,
+            [InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ɢʀᴏᴜᴘ 💢",url="https://t.me/movie_lookam")]
+        )
+        btn.insert(1,
+          [
+            InlineKeyboardButton(f'🦋  {search}  🦋', 'dupe'),
+            InlineKeyboardButton(f'🗂️ ғɪʟᴇs : {len(files)}', 'dupe')
+          ]
+        )
     elif off_set is None:
         btn.append(
             [InlineKeyboardButton(f"🗓️ ᴘᴀɢᴇ{round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
@@ -215,15 +225,6 @@ async def next_page(bot, query):
                 InlineKeyboardButton(f"🗓️ ᴘᴀɢᴇ {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
                 InlineKeyboardButton("ɴᴇxᴛ ⪼", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
-        )
-        btn.insert(0,
-            [InlineKeyboardButton(text="💢 ᴊᴏɪɴ ᴏᴜʀ ɢʀᴏᴜᴘ 💢",url="https://t.me/movie_lookam")]
-        )
-        btn.insert(1,
-          [
-            InlineKeyboardButton(f'🦋  {search}  🦋', 'dupe'),
-            InlineKeyboardButton(f'🗂️ ғɪʟᴇs : {len(files)}', 'dupe')
-          ]
         )
     
     try:
@@ -510,7 +511,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                             InlineKeyboardButton("📥  ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ  📥", url = ms.link)
                         ],
                         [
-                            InlineKeyboardButton("⚠️ ᴄᴀɴɴᴏᴛ ᴠɪᴇᴡ ᴛʜᴇ ғɪʟᴇ ❓ ᴄʟɪᴄᴋ ʜᴇʀᴇ ⚠️", url = f"{CH_LINK}")
+                            InlineKeyboardButton("⚠️ ᴄᴀɴɴᴏᴛ ᴀᴄᴄᴇs ❓ ᴄʟɪᴄᴋ ʜᴇʀᴇ ⚠️", url = f"{CH_LINK}")
                         ]
                     ]
                 )
@@ -796,7 +797,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         buttons = [[
 
-            InlineKeyboardButton('ᴄʟɪᴄᴋ ʜᴇʀᴇ ғᴏʀ ᴍᴏʀᴇ ʙᴜᴛᴛᴏɴs', callback_data='start')
+            InlineKeyboardButton('🦋 ᴄʟɪᴄᴋ ʜᴇʀᴇ ғᴏʀ ᴍᴏʀᴇ ʙᴜᴛᴛᴏɴs 🦋', callback_data='start')
 
         ]]
 
@@ -815,11 +816,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('ᴏᴡɴᴇʀ', callback_data='owner'),
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/movie_lookam')
+            InlineKeyboardButton('🍁 ᴏᴡɴᴇʀ', callback_data='owner'),
+            InlineKeyboardButton('🌿 ɢʀᴏᴜᴘ', url='https://t.me/movie_lookam')
             ],[      
-            InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('⚙️ ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
             InlineKeyboardButton('ɢᴏ ʙᴀᴄᴋ ᴛᴏ ᴍᴀɪɴ ᴍᴇɴᴜ', callback_data='samst')
         ]]
