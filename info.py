@@ -75,8 +75,8 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Second database
-DATABASE_URI2 = environ.get('DATABASE_URI2', "")
-DATABASE_NAME2 = environ.get('DATABASE_NAME2', "Rajappan")
+DB_URI = environ.get('DB_URI', "")
+DB_NAME = environ.get('DB_NAME', "Rajappan")
 
 #Downloader
 DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
