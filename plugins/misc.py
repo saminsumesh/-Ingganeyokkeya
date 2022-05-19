@@ -57,18 +57,20 @@ async def showid(client, message):
             quote=True
         )
 
-@Client.on_message(filters.command("about"))
+@Client.on_message(filters.command("owner"))
 async def aboutme(client, message):
-        buttons= [[
-            InlineKeyboardButton('♥️ 𝙳𝙴𝙿𝙻𝙾𝚈 𝚃𝚄𝚃𝙾𝚁𝙸𝙰𝙻 ♥️', url='https://youtu.be/kB9TkCs8cX0')
-            ],[
-            InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
-            InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
+        buttons = [[       
+            InlineKeyboardButton('🔰 ɪɴsᴛᴀɢʀᴀᴍ 🔰', url='https://instagram.com/__nihaal_efx__?igshid=YmMyMTA2M2Y='),
+            InlineKeyboardButton('🔰 ᴛᴇʟᴇɢʀᴀᴍ 🔰', url='https://t.me/NL_MP4')
+        ], [
+ 
+            InlineKeyboardButton("⪻ ʙᴀᴄᴋ", callback_data="start"),
+            InlineKeyboardButton('ᴄʟᴏsᴇ ✘', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=script.ABOUT_TXT.format(message.from_user.mention),
+        await query.message.edit_photo(
+            photo=
+            caption=script.OWNER_TXT.format(temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -163,7 +165,7 @@ async def help(client, message):
             InlineKeyboardButton('ᴀᴜᴅɪᴏ-ʙᴏᴏᴋ', callback_data='abook'),
             InlineKeyboardButton('ʀᴇᴘᴏʀᴛ', callback_data='report')
             ],[
-            InlineKeyboardButton('⪻ ʙᴀᴄᴋ', callback_data='start'),
+
             InlineKeyboardButton('🔮 sᴛᴀᴛᴜs', callback_data='stats'),
             InlineKeyboardButton('ɴᴇxᴛ ⪼', callback_data='eth')
         ]]
@@ -188,7 +190,7 @@ async def help(client, message):
             InlineKeyboardButton('ᴡʜᴏ-ɪs', callback_data='whois')           
             ],[
             InlineKeyboardButton('⪻ ʙᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('🔮 sᴛᴀᴛᴜs', callback_data='statsx'),
+            InlineKeyboardButton('🔮 sᴛᴀᴛᴜs', callback_data='stats'),
             InlineKeyboardButton('ɴᴇxᴛ ⪼', callback_data='prop')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)       
