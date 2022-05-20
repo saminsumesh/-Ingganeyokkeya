@@ -70,7 +70,7 @@ TG_MAX_SELECT_LEN = environ.get("TG_MAX_SELECT_LEN", "100")
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 # MongoDB information
-DATABASE_URI ="mongodb+srv://nihaal:nihaal@cluster0.etk54.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI ="mongodb+srv://nihaal:nihaal@cluster0.etk54.mongodb.net/?retryWrites=true&w=majority"
 DATABASE_NAME ="nihuu"
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
