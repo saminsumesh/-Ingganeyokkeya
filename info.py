@@ -70,14 +70,12 @@ TG_MAX_SELECT_LEN = environ.get("TG_MAX_SELECT_LEN", "100")
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 # MongoDB information
-DATABASE_URI ="mongodb+srv://nihaal:nihaal@cluster0.etk54.mongodb.net/?retryWrites=true&w=majority"
-DATABASE_NAME ="nihuu"
+DATABASE_URI = environ.get('DATABASE_URI', "") 
+DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan") 
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-
 # Second database
-DATABASE_URI2 ="mongodb+srv://poda:poda@cluster0.gvxz3.mongodb.net/?retryWrites=true&w=majority"
-DATABASE_NAME2 ="Rajappan"
-
+DATABASE_URI2 = environ.get('DATABASE_URI2', "") 
+DATABASE_NAME2 = environ.get('DATABASE_NAME2', "Rajappan")
 #Downloader
 DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 
